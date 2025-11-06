@@ -1,0 +1,39 @@
+/* Definition of variables */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+/* smooth transitions when scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* body */
+body {
+  color: var(--text-color);
+}
+
+/* anchor */
+a {
+  color: var(--text-color);
+}
+
+/* Hidden elements */
+.visually-hidden {
+  display: none;
+}
+
+/* Card categories */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Section taglines */
+.section-tagline {
+  color: var(--color-primary);
+}
