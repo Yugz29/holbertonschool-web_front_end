@@ -460,6 +460,7 @@ template {
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
+    position: relative;
 }
 
 .nav .nav-link {
