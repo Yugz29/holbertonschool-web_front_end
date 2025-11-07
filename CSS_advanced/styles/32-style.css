@@ -526,8 +526,6 @@ a:active {
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
-    transition: color var(--transition-duration) var(--transition-cubic-bezier),
-                background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 /* Hover state for buttons */
@@ -535,6 +533,8 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
+    transition-property: color, background-color;
+    transition-duration: var(--transition-duration);
 }
 
 /* Hidden elements */
@@ -722,15 +722,11 @@ ul.row {
 .card-work .card-outer {
     position: relative;
     overflow: hidden;
-    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-.card-work .card-image {
-    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-image {
     transform: scale(1.2);
+    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
