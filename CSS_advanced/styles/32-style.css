@@ -789,16 +789,18 @@ ul.row {
 }
 
 /* Card quote decoration */
+
+/* Card quote decoration */
 .card-testimonial .card-quote {
-    position: relative; /* position relative pour que le ::before se base dessus */
+    position: relative;
 }
 
 .card-testimonial .card-quote::before {
-    content: "\201C";       /* guillemet ouvrant */
-    position: absolute;     /* position absolue par rapport au parent */
-    top: -4.5rem;           /* verticalement au-dessus */
-    left: -1rem;            /* horizontalement */
-    color: #efeded;         /* couleur du guillemet */
-    font-size: 10rem;       /* taille énorme pour effet décoratif */
-    z-index: -1;            /* derrière le texte */
+    content: "\201C";
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
 }
