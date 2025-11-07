@@ -526,13 +526,15 @@ a:active {
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
-    transition: color background-color var(--transition-duration);
 }
 
+/* Hover state for buttons */
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
+    transition-property: color, background-color;
+    transition-duration: var(--transition-duration);
 }
 
 /* Hidden elements */
@@ -722,13 +724,9 @@ ul.row {
     overflow: hidden;
 }
 
-/* Card image transition and hover effect */
-.card-work .card-image {
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
-}
-
 .card-work:hover .card-image {
     transform: scale(1.2);
+    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
@@ -790,6 +788,7 @@ ul.row {
     opacity: 1;
 }
 
+/* Card quote decoration */
 /* Card quote decoration */
 .card-testimonial .card-quote {
     position: relative !important;
