@@ -407,12 +407,14 @@ template {
     float: right;
 }
 
+/* Nav container */
 nav {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* Nav items */
 nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -422,6 +424,7 @@ nav .nav-item {
     margin: var(--nav-item-margin);
 }
 
+/* Nav links */
 nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
