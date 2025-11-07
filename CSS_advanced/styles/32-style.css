@@ -526,14 +526,13 @@ a:active {
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
+    transition: color background-color var(--transition-duration);
 }
 
-/* Hover state for buttons */
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
-    transition: color background-color var(--transition-duration);
 }
 
 /* Hidden elements */
@@ -723,9 +722,13 @@ ul.row {
     overflow: hidden;
 }
 
+/* Card image transition and hover effect */
+.card-work .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
 .card-work:hover .card-image {
     transform: scale(1.2);
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
