@@ -357,22 +357,22 @@ template {
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
 
-  /* variables for fonts */
+    /* variables for fonts */
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  /* font size variables */
+    /* font size variables */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
 
-  /* font weight variables */
+    /* font weight variables */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
-  /* line height variables */
+    /* line height variables */
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
@@ -383,7 +383,7 @@ template {
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 
-  /* Section paddings */
+    /* Section paddings */
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
@@ -391,14 +391,36 @@ template {
     --section-footer-align: center;
     --footer-padding: 5rem 0 1rem;
 
-  /* Navbar custom properties */
+    /* Navbar custom properties */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem; /* 4% of root element (1rem = 16px) */
+    --nav-item-letter-spacing: 0.04rem; 
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 3rem 0; /* top right bottom left */
+    --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-white);
+
+    /* Button custom properties */
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+
+    /* Header custom properties */
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+
+    /* Custom property for section tagline */
+    --section-tagline-margin: 0;
 }
 
 /* Nav link before pseudo element */
@@ -424,6 +446,7 @@ template {
 }
 
 .nav {
+    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -553,6 +576,7 @@ a:active {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
 }
 
 /* Container */
@@ -571,16 +595,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer */
 .footer {
     padding: var(--footer-padding);
-}
-
-/* Custom property for section tagline */
-:root{
-    --section-tagline-margin: 0;
-}
-
-/* Section tagline margin */
-.section-tagline {
-    margin: var(--section-tagline-margin);
 }
 
 /* Row class (ul.row) */
@@ -676,16 +690,6 @@ ul.row {
 
 .section-hero .section-inner {
     padding: 10rem 40rem 2rem 0;
-}
- 
-/* Header custom properties */
-:root {
-    --header-padding: 4rem 0 0;
-    --header-logo-position: relative;
-    --header-logo-link-display: inline-block;
-    --header-logo-link-position: absolute;
-    --header-logo-link-top: -1rem;
-    --header-logo-link-left: 0;
 }
 
 /* Header */
