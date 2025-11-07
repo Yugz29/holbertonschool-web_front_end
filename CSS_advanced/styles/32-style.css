@@ -720,8 +720,8 @@ ul.row {
 
 /* Card work container */
 .card-work .card-outer {
-    position: relative;   /* position relative */
-    overflow: hidden;     /* masquer tout dépassement */
+    position: relative;
+    overflow: hidden;
 }
 
 .card-work:hover .card-image {
@@ -735,15 +735,15 @@ ul.row {
 
 /* Image inside card-work */
 .card-work .card-image img {
-    height: 30rem;        /* hauteur fixe */
-    width: 100%;          /* pleine largeur */
-    object-fit: cover;    /* recadrage sans déformation */
-    vertical-align: bottom; /* alignement vertical en bas */
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 /* Inner card content */
 .card-work .card-inner {
-    position: absolute;   /* position absolue */
+    position: absolute;
     top: -0.1rem;
     left: -0.1rem;
     right: -0.1rem;
@@ -753,14 +753,14 @@ ul.row {
 
 /* Hover state of card-inner */
 .card-work:hover .card-inner {
-    background-color: rgba(0, 0, 0, 0.7); /* overlay semi-transparent */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Card title */
 .card-work .card-title {
     text-align: center;
     margin: 0;
-    opacity: 0;             /* invisible par défaut */
+    opacity: 0;
     height: 100%;
     position: relative;
 }
@@ -769,8 +769,8 @@ ul.row {
 .card-work .card-title a {
     display: block;
     text-decoration: none;
-    padding-top: 45%;       /* pour centrer verticalement le contenu */
-    position: relative;      /* nécessaire pour after */
+    padding-top: 45%;
+    position: relative;
 }
 
 /* Link after pseudo-element */
@@ -785,10 +785,8 @@ ul.row {
 
 /* Hover state of card-title */
 .card-work:hover .card-title {
-    opacity: 1;             /* apparence au survol */
+    opacity: 1;
 }
-
-/* Card quote decoration */
 
 /* Card quote decoration */
 .card-testimonial .card-quote {
