@@ -609,6 +609,6 @@ ul.row {
 }
 
 /* SVG icons inside social links */
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color);
 }
