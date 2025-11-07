@@ -623,7 +623,7 @@ ul.row {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
-    --buton-color: var(--color-white);
+    --button-color: var(--color-white);
 }
 
 /* Footer address */
