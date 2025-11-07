@@ -386,7 +386,7 @@ template {
 
 /* Universal box sizing */
 *, *::before, *::after {
-    box-sizing: boder-box;
+    box-sizing: border-box;
 }
 
 /* Smooth transitions when scrolling */
