@@ -451,7 +451,7 @@ a:active {
 /* Section header */
 .section-header {
     text-align: var(--section-header-align);
-    padding: var(--section-hedaer-padding);
+    padding: var(--section-header-padding);
 }
 
 /* Section body */
